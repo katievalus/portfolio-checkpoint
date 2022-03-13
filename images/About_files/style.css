@@ -1,22 +1,16 @@
 body{
     background-color: white;
-    font-family: 'montserrat';
+    font-family: sans-serif;
 }
 main,footer,header{
     padding: 10px;
 }
 h1{
-    font-size: 75px;
-    padding: 5px;
-    padding-top: 50px;
-    margin: 10px;
-    font-family: 'montserrat';
-    font-weight: bolder;
-    text-align: center;
-}
-.main_blurb{
-    text-align: center;
     font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 h2{
     font-size: 22px;
@@ -46,31 +40,47 @@ nav li{
 
 a:hover{
     color:blueviolet;
-    font-weight: bolder;
+    font-size: 18px;
 }
 .active{
     font-size: 20px;
     font-weight: bold;
-    border: 2px solid blueviolet;
-}
-a.skip{
-    display: nonw;
+    border: 3px solid blueviolet;
 }
 img {
+    width: auto;
+    height: 200px;
     margin: 0px;
-    padding: 10px;
-    filter: grayscale(60%);
-}
-img:hover{
+    padding: 5px;
+    border: 3px solid black;
     filter: grayscale(0%);
 }
 
+img:hover{
+    border: 5px solid pink;
+}
+
+/*img:nth-child(even):hover{
+    filter: grayscale(100%);
+ } 
+
+ img:nth-child(odd):hover{
+    filter: grayscale(0%);
+ } 
+ 
+ .skip {
+     padding: 5px;
+     margin: 10px;
+ }
+ */
 .index_img{
-     display: grid;
+     display: flex;
+     flex-flow: row wrap;
      justify-content: space-around;
+
  }
  .index_img img{
-    grid-template-columns: 1fr 1fr;
+    flex-basis: 250px;
  }
 
 .lifestyle{
@@ -85,6 +95,4 @@ img:hover{
 }
 .homescreen{
     height: 100vh;
-    background-image: url("../images/chicago-salad.jpg"); 
-
 }
